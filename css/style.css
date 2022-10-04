@@ -201,7 +201,7 @@ header {
 /* ===== Mobile Navbar ===== */
 #bar {
     display: none;
-    color: #fff;
+    color: var(--dark-blue);
     font-size: 26px;
 }
 
@@ -759,6 +759,23 @@ footer img:not(.logo img) {
 .stats-details h3{
     color: var(--light-blue);
     font-size: 40px;
+}
+
+
+/* ===============================================================
+    RESPONSIVE DESIGN
+   ===============================================================
+*/
+@media (max-width: 991px) {
+    /* ----- Mobile Menu ----- */
+    #bar {
+        display: block;
+    }
+    .navbar .nav-menu {
+        display: none;
+    }
+
+    
 }
 
 
