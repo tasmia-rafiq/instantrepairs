@@ -90,7 +90,6 @@ header {
     justify-content: space-between;
     padding: 0 5rem;
     background: none;
-    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -142,6 +141,32 @@ header {
     text-align: center;
     position: relative;
     transition: 0.5s;
+}
+
+.navbar .sub-menu {
+    position: absolute;
+    top: 40px;
+    flex-direction: column;
+    background: #e4f1ff;
+    border-radius: 6px;
+    padding: 0 10px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transition: visibility 0s linear 0.4s, opacity .3s linear, top .3s ease-out;
+       -moz-transition: visibility 0s linear 0.4s, opacity .3s linear, top .3s ease-out;
+        -ms-transition: visibility 0s linear 0.4s, opacity .3s linear, top .3s ease-out;
+            transition: visibility 0s linear 0.4s, opacity .3s linear, top .3s ease-out; 
+}
+
+.navbar li:hover .sub-menu{
+    visibility: visible;
+    opacity: 1;    
+	  -webkit-transition-delay: 0s;
+       -moz-transition-delay: 0s;
+        -ms-transition-delay: 0s;      
+            transition-delay: 0s;
 }
 
 .navbar ul li a::after,
