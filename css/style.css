@@ -147,7 +147,8 @@ header {
     position: absolute;
     top: 40px;
     flex-direction: column;
-    background: #e4f1ff;
+    background: #ecf5ff;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.3);
     border-radius: 6px;
     padding: 0 10px;
     z-index: 1;
