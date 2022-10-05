@@ -967,6 +967,60 @@ footer img:not(.logo img) {
 .faq {
     padding-top: 100px !important;
 }
+.faq h2 {
+    text-align: center !important;
+}
+.faq h2 span {
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-bottom: 3px solid var(--orange);
+}
+
+.faq-content {
+    margin-top: 20px;
+}
+
+.acc-btn {
+    background-color: #e6f2ff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.4s;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.acc-active, .acc-btn:hover {
+    background-color: #ffe2cc;
+}
+
+.panel {
+    padding: 20px 10px;
+    background-color: #fff;
+    font-size: 14px;
+    display: none;
+    overflow: hidden;
+}
+
+.acc-btn:after {
+    content: '\f0d7'; 
+    color: #1b1b1b;
+    float: right;
+    font-family: 'FontAwesome';
+    margin-left: 5px;
+  }
+  
+.acc-active:after {
+    content: "\f0d8";
+}
 
 
 
