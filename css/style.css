@@ -691,6 +691,10 @@ footer img:not(.logo img) {
     color: var(--orange);
 }
 
+.about {
+    padding-top: 120px !important;
+}
+
 .about-flex{
     display: flex;
     flex-direction: row;
@@ -957,6 +961,12 @@ footer img:not(.logo img) {
 }
 
 
+/* =================================================
+    FAQ Page
+==================================================== */
+.faq {
+    padding-top: 100px !important;
+}
 
 
 
