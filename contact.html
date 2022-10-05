@@ -82,7 +82,7 @@
 
         <section class="contact section">
             <div class="container">
-                <div class="contact-form">
+                <div class="contact-form" id="contact-form">
                     <div class="contact-info">
                         <img src="images/contact.jpg">
                         <div class="info-details">
@@ -106,12 +106,12 @@
                                 Let's Get In <span>Touch</span>
                             </h3>
     
-                            <input type="text" name="name" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="Email Address" required>
-                            <input type="tel" name="phone" placeholder="Phone Number" required>
-                            <textarea name="message" placeholder="Type your Message here" cols="30" rows="10"></textarea>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <input type="email" name="email" id="email" placeholder="Email Address" required>
+                            <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                            <textarea name="message" id="message" placeholder="Type your Message here" cols="30" rows="10"></textarea>
     
-                            <button name="submit" type="submit" id="contact-submit" class="contact-btn">Send</button>
+                            <button name="submit" type="submit" id="send_message" class="contact-btn">Send</button>
     
                         </form>
                     </div>
@@ -159,6 +159,7 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
 
 </body>
