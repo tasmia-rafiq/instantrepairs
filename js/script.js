@@ -41,6 +41,55 @@ for (i = 0; i < acc.length; i++) {
     });
   }
 
+//Reviews
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" dot-active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " dot-active";
+}
+
+function readFunc(client) {
+    var dots = document.querySelector(`.review-card[data-review= ${client}] .review-dot`);
+    var moreText = document.querySelector(`.review-card[data-review= ${client}] .more-text`);
+    var btnText = document.querySelector(`.review-card[data-review= ${client}] .read-btn`);
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "More";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Less";
+      moreText.style.display = "inline";
+    }
+  }
+
+
+
+
 //contact form
 jQuery(document).ready(function(){
     cavani_tm_contact_form();
