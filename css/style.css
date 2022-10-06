@@ -625,6 +625,11 @@ header {
   margin-right: 10px;
 }
 
+.client a {
+    color: #1b1b1b;
+    font-weight: 500;
+}
+
 .rating {
   margin-bottom: 7px;
 }
