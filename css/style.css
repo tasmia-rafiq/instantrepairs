@@ -1089,6 +1089,10 @@ footer img:not(.logo img) {
   box-shadow: 0 0 25px -10px #000;
 }
 
+#gaming-price .price-box .price:before {
+  content: "£";
+}
+
 
 
 
