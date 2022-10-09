@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Repairs</title>
+
+    <!-- CSS Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <header>
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="images/logo-ir.png">
+            </a>
+
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/">Home</a></li>
+                    <li>
+                        <a href="#/" class="active">services <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="computer-repair.html">Computer Repair</a></li>
+                            <li><a href="about.html">Repair at Home</a></li>
+                            <li><a href="gaming-pc-built.html" class="active">Gaming PC Build</a></li>
+                            <li><a href="about.html">M/B repair</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="bar"></i>
+        </nav>
+    </header>
+
+    <!-- ===== Mobile Menu ===== -->
+    <div class="popup-mobilemenu">
+        <div class="menu-inner">
+            <div class="menu-top">
+                <i class="fa-solid fa-close" id="close"></i>
+            </div>
+
+            <div class="content">
+                <nav id="sideNavMobile" class="mainmenu-nav">
+                    <ul class="navbar-list1">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#/">services</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================================
+                GAMING 
+        ========================================================================================== -->
+
+    <div class="main services gaming-page">
+        <div class="container">
+            <h1><span>Gaming</span> PC Build</h1>
+            <div class="gaming-text">
+                <p>Thinking about a new Gaming pc but tor sure where to look for?</p>
+                <p>Want to upgrade your old rig or need some servicing? </p>
+                <p>Don’t worry, you are at the right place!</p>
+                <p>We can help you with choosing the parts, assemble, configure, and set everything for you.</p>
+                <p>We have a long experience in building and upgrading gaming PCs.</p>
+                <p>Get in touch now to know more!</p>
+            </div>
+
+            <div class="about-flex">
+                <img src="images/about.jpg" alt="about">
+
+                <div class="about-content">
+                    <span>Instant Repairs</span>
+                    <h2>Who We Are</h2>
+                    <p>InstantRepairs truly makes help closer than ever by creating a place where expert help is always
+                        available, day or night. We offer professional services for businesses and individuals -
+                        provided by our experts. <br> We fix your Computers, Laptops, Gaming PCs etc. with best quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================================
+                Image Carousel 
+        ========================================================================================== -->
+    <div class="slide-container">
+        <div class="slideshow-inner">
+            <div class="imgSlides animate">
+
+                <img src='images/gallery/g1.jpg' alt="sally lightfoot crab" />
+            </div>
+
+            <div class="imgSlides animate">
+
+                <img src='images/gallery/g2.jpg' alt="fighting nazca boobies" />
+            </div>
+
+            <div class="imgSlides animate">
+
+                <img src='images/gallery/g3.jpg' alt="otovalo waterfall" />
+            </div>
+
+            <div class="imgSlides animate">
+
+                <img src='images/gallery/g4.jpg' alt="pelican" />
+            </div>
+
+        </div>
+
+
+        <a class="prevBtn" onclick='addSlides(-1)'>&#10094;</a>
+        <a class="nextBtn" onclick='addSlides(1)'>&#10095;</a>
+    </div>
+    <br />
+
+    <div style='text-align: center;' class="dot-container">
+        <span class="dot-nav" onclick='presentSlide(1)'></span>
+        <span class="dot-nav" onclick='presentSlide(2)'></span>
+        <span class="dot-nav" onclick='presentSlide(3)'></span>
+        <span class="dot-nav" onclick='presentSlide(4)'></span>
+    </div>
+
+    <!-- ==========================================================================================
+                PRICING
+        ========================================================================================== -->
+
+    <div class="about2 section" id="gaming-price">
+        <section class="pricing-area section">
+            <div class="container">
+                <div class="pricing">
+                    <div class="price-box">
+                        <h2 class="price-head">In Store</h2>
+                        <h3 class="price">44.99</h3>
+                        <ul class="price-features">
+                            <li>Free quote</li>
+                            <li>Component List</li>
+                            <li>Assembly and Testing</li>
+                            <li>Windows Installation </li>
+                            <li>7 Days Extra Support</li>
+                            <li>Benchmark</li>
+                            <li>Ready in 3-5 working days</li>
+                        </ul>
+                        <button class="contact-btn" onclick="location.href='contact.html'">Get Ticket</button>
+                    </div>
+
+                    <div class="price-box">
+                        <h2 class="price-head">Home Visit</h2>
+                        <h3 class="price">54.99</h3>
+                        <ul class="price-features">
+                            <li>Free quote</li>
+                            <li>Component List</li>
+                            <li>Different Build Options</li>
+                            <li>Assembly and Testing</li>
+                            <li>Windows Installation </li>
+                            <li>Benchmarks</li>
+                            <li>15 Days Extra Support</li>
+                            <li>Ready in 1 Day</li>
+                        </ul>
+                        <button class="contact-btn" onclick="location.href='contact.html'">Get Ticket</button>
+                    </div>
+
+                    <div class="price-box">
+                        <h2 class="price-head">Home Visit Premium</h2>
+                        <h3 class="price">79.99</h3>
+                        <ul class="price-features">
+                            <li>Free quote</li>
+                            <li>Component List</li>
+                            <li>Different Build Options</li>
+                            <li>Assembly and Testing</li>
+                            <li>Windows Installation </li>
+                            <li>Benchmarks</li>
+                            <li>30 Days Extra Support</li>
+                            <li>Ready in 1 Day</li>
+                            <li>Windows Pro key</li>
+                            <li>Microsoft office 2021</li>
+                        </ul>
+                        <button class="contact-btn" onclick="location.href='contact.html'">Get Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ==========================================================================================
+                FOOTER
+            ========================================================================================== -->
+    <footer>
+        <img src="images/footer-swoosh.svg">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h2>Contact Us</h2>
+                    <div class="footer-line"></div>
+
+                    <ul>
+                        <li><a href="#">xyz@gmail.com</a></li>
+                        <li><a href="#">(021) 897-4577</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h2>Quick Links</h2>
+                    <div class="footer-line"></div>
+
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="branding">
+            <p>Copyright &copy; 2022 | InstantRepairs | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/gaming-carousel.js"></script>
+
+</body>
+
+</html>
