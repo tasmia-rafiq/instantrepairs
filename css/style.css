@@ -1093,6 +1093,18 @@ footer img:not(.logo img) {
   content: "£";
 }
 
+#gaming-price .landing-btns {
+  display: flex;
+}
+
+#gaming-price .landing-btns .contact-btn,
+#gaming-price .landing-btns .landing-btn {
+  width: 100%;
+  padding: 12px 10px;
+  white-space: nowrap;
+  margin: 10px 0;
+}
+
 
 
 
