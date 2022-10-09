@@ -973,6 +973,7 @@ footer img:not(.logo img) {
 .gaming-page h1 span {
   font-size: 40px;
   font-weight: unset;
+  text-transform: capitalize;
 }
 
 .gaming-page .gaming-text {
