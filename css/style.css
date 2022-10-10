@@ -311,14 +311,14 @@ header {
 
 .popup-mobilemenu .content .mainmenu-nav .navbar-list1 li {
   display: inherit;
-  margin: 12px 0px !important;
+  margin: 5px 0px !important;
 }
 
 .popup-mobilemenu .content .mainmenu-nav .navbar-list1 li a {
   color: #1b1b1b;
   position: relative;
   transition: 0.4s;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: capitalize;
   letter-spacing: 1px;
   font-family: var(--poppins);
@@ -591,6 +591,10 @@ header {
 }
 
 /* ===== Reviews ===== */
+.reviews.mob-reviews {
+  display: none;
+}
+
 .slideshow-container {
   height: 300px;
   position: relative;
@@ -625,9 +629,14 @@ header {
   margin: 0 10px;
   padding: 20px 20px;
   border: 1px solid #e1e1e1;
+  box-shadow: 0 0.125rem 0.75rem 0 rgb(0, 0, 0, 0.3);
   border-radius: 10px;
   font-size: 12px;
   height: 100%;
+}
+
+.r-slides .review-card {
+  width: 50%;
 }
 
 .client {
@@ -695,6 +704,13 @@ header {
 .next {
   right: -50px;
   left: unset;
+}
+
+.mob-reviews .next {
+  right: 0px;
+}
+.mob-reviews .prev {
+  left: 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -1535,6 +1551,15 @@ footer img:not(.logo img) {
     display: none;
   }
 
+  /* ----- Home Page ----- */
+  .reviews {
+    display: none;
+  }
+
+  .reviews.mob-reviews {
+    display: block;
+  }
+
   /* Pricing Box */
   .about2#gaming-price {
     height: auto;
@@ -1559,9 +1584,18 @@ footer img:not(.logo img) {
   .logo img {
     width: 70%;
   }
-
   .navbar {
     padding: 0 1.5rem;
+  }
+
+  /* ----- Home Page ----- */
+  .landing {
+    background-size: 65%;
+    background-position: right -40% center;
+  }
+
+  .mob-reviews .slideshow-container {
+    height: auto;
   }
 
   .about-flex {
@@ -1582,9 +1616,22 @@ footer img:not(.logo img) {
   .logo img {
     width: 100%;
   }
-
   .container {
     padding: 20px 10px;
+  }
+
+  /* ------ Home Page ------ */
+  .landing {
+    background-position: bottom center;
+    background-size: 80%;
+  }
+
+  .landing .container {
+    margin-top: 70px;
+  }
+
+  .r-slides .review-card {
+    width: 70%;
   }
 
   .services h1,
@@ -1618,7 +1665,30 @@ footer img:not(.logo img) {
   }
 
   .logo {
-    width: 55%;
+    width: 60%;
+  }
+
+  /* ------ Home Page ------ */
+  .landing {
+    background-position: bottom center;
+    background-size: 100%;
+  }
+
+  .landing h2,
+  .landing p {
+    width: 100%;
+  }
+
+  .landing-btns {
+    display: flex;
+    align-items: center;
+  }
+
+  .landing-btns .landing-btn,
+  .landing-btns .contact-btn {
+    width: 100%;
+    white-space: nowrap;
+    margin: 10px 0;
   }
 
   .gaming-page .about-flex img {
@@ -1641,5 +1711,12 @@ footer img:not(.logo img) {
   .section {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .landing-btns a {
+    width: 50% !important;
+    padding: 15px;
   }
 }
