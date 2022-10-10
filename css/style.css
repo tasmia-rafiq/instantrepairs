@@ -965,12 +965,12 @@ footer img:not(.logo img) {
   padding: 100px 20px 0 20px;
 }
 
-.gaming-page h1 {
+.services h1 {
   margin-bottom: 20px;
   color: var(--orange);
 }
 
-.gaming-page h1 span {
+.services h1 span {
   font-size: 40px;
   font-weight: unset;
   text-transform: capitalize;
@@ -1097,25 +1097,59 @@ footer img:not(.logo img) {
   margin-bottom: 300px;
 }
 
-#gaming-price .price-box {
+#gaming-price .price-box,
+#home-repair .price-box {
   box-shadow: 0 0 25px -10px #000;
 }
 
-#gaming-price .price-box .price:before {
+#gaming-price .price-box .price:before,
+#home-repair .price-box .price::before {
   content: "£";
 }
 
-#gaming-price .landing-btns {
+#gaming-price .landing-btns,
+#home-repair .landing-btns {
   display: flex;
 }
 
 #gaming-price .landing-btns .contact-btn,
-#gaming-price .landing-btns .landing-btn {
+#gaming-price .landing-btns .landing-btn,
+#home-repair .landing-btns .contact-btn,
+#home-repair .landing-btns .landing-btn {
   width: 100%;
   padding: 12px 10px;
   white-space: nowrap;
   margin: 10px 0;
 }
+
+
+/* =================================================
+    Repair At Home page
+==================================================== */
+.home-img {
+  width: 100%;
+  object-fit: cover;
+  height: 70vh;
+  margin-top: 90px;
+}
+
+.main.home-repair {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.services-text {
+  padding: 0 60px;
+}
+
+#home-repair .price-box .price-head {
+  background: var(--orange);
+}
+
+#home-repair {
+  margin-bottom: 100px;
+}
+
 
 
 
@@ -1124,14 +1158,14 @@ footer img:not(.logo img) {
     About Page
 ==================================================== */
 .page-header {
+  margin-top: 100px;
   height: 65vh;
-  background: url("/images/page-header.jpg");
+  background: url("/images/home-bg.jpg");
   background-color: rgb(0, 0, 0, 0.1);
   background-blend-mode: multiply;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-  background-attachment: fixed;
+  background-position: bottom center;
   display: flex;
   justify-content: center;
   align-items: center;
