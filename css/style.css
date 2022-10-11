@@ -505,7 +505,7 @@ header {
 }
 
 .price-box .price:before {
-  content: "$";
+  content: "£";
   position: absolute;
   top: -10px;
   left: -35px;
@@ -918,17 +918,28 @@ footer img:not(.logo img) {
     Computer Repair Page
 ==================================================== */
 
-.services .main_content {
+.main.services {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.services .about-content {
+  margin-right: 30px;
+}
+
+.services.main_content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 0;
   row-gap: 40px;
+  padding: 50px;
+  background: var(--background-color-1);
 }
 
-.services .main_content .main_content_col {
-  width: 33.333%;
+.services.main_content .main_content_col {
+  width: 25%;
   padding-right: 50px;
 }
 
@@ -1118,7 +1129,7 @@ footer img:not(.logo img) {
   margin-bottom: 300px;
 }
 
-#gaming-price .price-box,
+.pricing .price-box,
 #home-repair .price-box {
   box-shadow: 0 0 25px -10px #000;
 }
@@ -1128,13 +1139,13 @@ footer img:not(.logo img) {
   content: "£";
 }
 
-#gaming-price .landing-btns,
+.pricing .landing-btns,
 #home-repair .landing-btns {
   display: flex;
 }
 
-#gaming-price .landing-btns .contact-btn,
-#gaming-price .landing-btns .landing-btn,
+.pricing .landing-btns .contact-btn,
+.pricing .landing-btns .landing-btn,
 #home-repair .landing-btns .contact-btn,
 #home-repair .landing-btns .landing-btn {
   width: 100%;
