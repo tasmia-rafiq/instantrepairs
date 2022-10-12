@@ -793,7 +793,7 @@ footer img:not(.logo img) {
 }
 
 .footer-col {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .footer-col a {
@@ -1694,6 +1694,7 @@ footer img:not(.logo img) {
   /* Footer */
   .footer-row {
     flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
@@ -1759,6 +1760,11 @@ footer img:not(.logo img) {
   .gaming-page .about-flex img {
     width: 80%;
     margin-right: 0;
+  }
+
+  /* ----- Footer ----- */
+  footer {
+    padding-top: 320px;
   }
 }
 
@@ -1856,6 +1862,10 @@ footer img:not(.logo img) {
     padding: 0 20px;
   }
   .footer-col {
+    width: 100%;
+  }
+
+  footer iframe {
     width: 100%;
   }
 }
