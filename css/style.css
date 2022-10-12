@@ -763,6 +763,12 @@ footer {
   background: linear-gradient(145deg, #001099 0, #3ad9ff 96%);
 }
 
+@media (min-width: 1500px) {
+  footer {
+    padding-top: 65vh;
+  }
+}
+
 footer img:not(.logo img) {
   margin-bottom: 30px;
   margin-top: -1px;
@@ -919,12 +925,43 @@ footer img:not(.logo img) {
 ==================================================== */
 
 .main.services {
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 20px;
+}
+
+.main.services .about-flex {
+  justify-content: space-evenly;
 }
 
 .services .about-content {
   margin-right: 30px;
+  width: 60%;
+}
+
+.services .repair-mosaic {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 50%;
+  align-items: stretch;
+}
+
+.repair-mosaic img {
+  border-radius: 10px !important;
+}
+
+@media (min-width: 1450px) {
+  .services .about-content {
+    width: 40%;
+  }
+  .services .repair-mosaic {
+    width: 40%;
+  }
+}
+
+.repair-mosaic img {
+  width: 100% !important;
+  margin-bottom: 0 !important;
 }
 
 .services.main_content {
@@ -954,7 +991,22 @@ footer img:not(.logo img) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
   transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1650px) {
+  .service-card {
+    width: 60%;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1399px) {
+  .service-card {
+    width: 70%;
+  }
 }
 
 .main_content_col:last-child .service-card {
@@ -1125,7 +1177,8 @@ footer img:not(.logo img) {
 }
 
 /* Pricng Area */
-#gaming-price {
+#gaming-price,
+#computer-repair {
   margin-bottom: 300px;
 }
 
@@ -1357,9 +1410,9 @@ footer img:not(.logo img) {
 
 .form-wrapper {
   width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-info img {
@@ -1563,6 +1616,35 @@ footer img:not(.logo img) {
     display: block;
   }
 
+  /* ----- Computer Repair ----- */
+  .computer-repair .about-flex {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .services .about-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .computer-repair .about-content p {
+    margin-bottom: 5px;
+  }
+
+  .services.main_content .main_content_col {
+    width: 28.333%;
+    padding-right: 0;
+  }
+  .services.main_content {
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+
+  #gaming-price,
+  #computer-repair {
+    margin-bottom: 40px;
+  }
+
   /* ------ About Page ------ */
   .about {
     padding-top: 60px !important;
@@ -1633,6 +1715,16 @@ footer img:not(.logo img) {
     height: auto;
   }
 
+  /* ----- Computer Repair ----- */
+  .services .repair-mosaic {
+    width: 70%;
+  }
+
+  .services.main_content .main_content_col {
+    width: 40%;
+  }
+  
+
   /* ----- Contact Page ----- */
   .contact-form {
     flex-direction: column-reverse;
@@ -1690,6 +1782,20 @@ footer img:not(.logo img) {
 
   .r-slides .review-card {
     width: 70%;
+  }
+
+  /* ----- Computer Repair ----- */
+  .services.main_content {
+    padding: 20px 0;
+  }
+
+  .services .repair-mosaic {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .service-card h3 {
+    font-size: 18px;
   }
 
   /* About Page */
@@ -1807,10 +1913,30 @@ footer img:not(.logo img) {
     flex-direction: column;
   }
 
+  /* ---- Computer Repair ----  */
+  .services.main_content {
+    column-gap: 20px;
+  }
+
+  .service-card {
+    padding: 10px 15px;
+  }
+
   /* ----- Gaming Page ----- */
 
   .gaming-page .about-flex img {
     width: 100%;
+  }
+
+  .services .about-content h1,
+  .services .about-content h1 span {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .main.services {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .pricing-area {
@@ -1837,4 +1963,6 @@ footer img:not(.logo img) {
     width: 50% !important;
     padding: 15px;
   }
+
+  
 }
