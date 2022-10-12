@@ -3,8 +3,23 @@ const mobileMenu = document.querySelector('.popup-mobilemenu');
 const menuBar = document.getElementById('bar');
 const close = document.getElementById('close');
 
+const serviceLink = document.getElementById('service-link');
+
+
 var acc = document.getElementsByClassName("acc-btn");
 var i;
+
+
+
+const serviceListFunc = () => {
+  var serviceList = document.getElementById('sub-menu');
+  if (serviceList.style.display === "block") {
+    serviceList.style.display = "none";
+  } else {
+    serviceList.style.display = "block";
+  }
+}
+
 
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 150) {

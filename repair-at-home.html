@@ -32,7 +32,6 @@
                             <li><a href="computer-repair.html">Computer Repair</a></li>
                             <li><a href="repair-at-home.html" class="active">Repair at Home</a></li>
                             <li><a href="gaming-pc-built.html">Gaming PC Build</a></li>
-                            <li><a href="about.html">M/B repair</a></li>
                         </ul>
                     </li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -56,8 +55,15 @@
                 <nav id="sideNavMobile" class="mainmenu-nav">
                     <ul class="navbar-list1">
                         <li><a href="/">Home</a></li>
-                        <li><a href="#/">services</a></li>
-                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li>
+                            <a href="#/" id="service-link" onclick="serviceListFunc()" class="active">Services <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu" id="sub-menu">
+                                <li><a href="computer-repair.html">Computer Repair</a></li>
+                                <li><a href="repair-at-home.html" class="active">Repair at Home</a></li>
+                                <li><a href="gaming-pc-built.html">Gaming PC Build</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
