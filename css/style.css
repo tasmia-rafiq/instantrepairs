@@ -77,6 +77,10 @@ p {
   color: var(--dark-blue) !important;
 }
 
+.red {
+  color: red !important;
+}
+
 .container {
   width: 95%;
   margin: auto;
@@ -792,7 +796,12 @@ footer {
   }
 }
 
-footer img:not(.logo img) {
+footer .footer-icon img{
+  display: flex;
+  margin: 20px auto 0 auto;
+}
+
+footer img:not(.footer-icon img) {
   margin-bottom: 30px;
   margin-top: -1px;
   position: absolute;
@@ -812,11 +821,11 @@ footer img:not(.logo img) {
   height: 1px;
   width: 85%;
   background: var(--light-blue);
-  bottom: 30px;
+  bottom: 0;
 }
 
 .footer-col {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .footer-col a {
@@ -1914,6 +1923,10 @@ footer img:not(.logo img) {
   .section {
     padding-top: 15px !important;
     padding-bottom: 15px !important;
+  }
+
+  footer .footer-icon img {
+    width: 70%;
   }
 }
 
